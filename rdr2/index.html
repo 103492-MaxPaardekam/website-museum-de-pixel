@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="doc-title">Red Dead Redemption 2: Museum De Pixel</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="rdr2-bg">
+    <div class="site-container">
+      <!-- header -->
+      <header class="header">
+        <a href="../index.html" class="header__logo-link">
+          <span class="text-maroon" id="museum-name-1">MUSEUM</span>
+          <span id="museum-name-2">DE PIXEL</span>
+        </a>
+        <img
+          src="media/logo.png"
+          alt="RED DEAD REDEMPTION 2"
+          id="main-title"
+          class="logo"
+        />
+        <div class="header__actions">
+          <button id="translate-button" class="button button--translate">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              />
+            </svg>
+            <span id="lang-text">English</span>
+          </button>
+          <button class="button button--overview">
+            <a href="../index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="house-icon"
+              >
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                />
+              </svg>
+              <span id="back-to-overview">Terug naar Overzicht</span>
+            </a>
+          </button>
+        </div>
+      </header>
+
+      <!-- nav -->
+      <nav id="page-nav" class="nav-bar">
+        <button class="nav-button nav-active" data-page="world" id="nav-world">
+          De Wereld & Verhaal
+        </button>
+        <button
+          class="nav-button nav-inactive"
+          data-page="characters"
+          id="nav-characters"
+        >
+          De Van der Linde Gang
+        </button>
+        <button
+          class="nav-button nav-inactive"
+          data-page="details"
+          id="nav-details"
+        >
+          Creatieve Keuzes & Details
+        </button>
+      </nav>
+
+      <!-- content -->
+      <main id="content-container" class="main-content">
+        <!-- pagina 1 -->
+        <section id="page-world" class="page-content">
+          <h2 class="page-title" id="world-title">
+            Een Einde aan het Wilde Westen
+          </h2>
+
+          <div class="content-grid content-grid--world">
+            <div class="card grid-span-2">
+              <h3 class="card__title" id="world-premise-title">
+                De Premisse: 1899
+              </h3>
+              <p class="card__text" id="world-premise-p1">
+                Red Dead Redemption 2 werpt ons in 1899, het onvermijdelijke
+                einde van het Wilde Westen. De tijd van de outlaws loopt op zijn
+                einde; beschaving, wetgeving en industrialisatie nemen de
+                overhand. Het verhaal volgt Arthur Morgan, een ervaren lid van
+                de Van der Linde Gang, die na een mislukte overval in Blackwater
+                op de vlucht is.
+              </p>
+              <p class="card__text" id="world-premise-p2">
+                De game is een emotioneel zware reis over loyaliteit, verraad en
+                de vraag of een mens kan veranderen. Arthur moet de strijd
+                aangaan met oprukkende autoriteiten, rivaliserende bendes én
+                zijn eigen morele kompas. Het is de ultieme saga van overleven
+                in een wereld die geen plaats meer heeft voor hen.
+              </p>
+            </div>
+
+            <!-- landscape galerij -->
+            <div class="card card--clickable" onclick="showGallery()">
+              <img
+                src="media/mountains.jpg"
+                alt="Uitgestrekt Western Landschap"
+                class="card__image"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B1A1A/C9A05B?text=RDR2+Landschap';"
+              />
+              <p class="card__caption">
+                <span id="world-img-caption"
+                  >De uitgestrekte, adembenemende wereld van 'Ambarino' en 'New
+                  Hanover'.</span
+                >
+                <span class="card__caption-highlight">KLIK VOOR GALERIJ</span>
+              </p>
+            </div>
+
+            <div class="card card--fact grid-span-3">
+              <span class="card__fact-icon">★</span>
+              <div>
+                <h4 class="card__fact-title" id="world-did-you-know-title">
+                  Wist je dat?
+                </h4>
+                <p class="card__fact-text" id="world-did-you-know-content">
+                  RDR2 is een prequel op Red Dead Redemption (2010). Hoewel
+                  Arthur Morgan het nieuwe hoofdpersonage is, krijgen we te zien
+                  hoe de jongere John Marston (de hoofdpersoon uit de eerste
+                  game) lid was van de gang en wat leidde tot de gebeurtenissen
+                  in zijn verhaal.
+                </p>
+              </div>
+            </div>
+
+            <!-- youtube vid -->
+            <div class="card grid-span-3">
+              <h3 class="card__title" id="world-video-title">
+                De Sfeer van de Wereld
+              </h3>
+              <p class="card__text" id="world-video-desc">
+                Een officiële trailer die de sfeer en de uitgestrekte wereld van
+                Red Dead Redemption 2 laat zien.
+              </p>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/gmA6MrX81z4"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- pagina 2 -->
+        <section id="page-characters" class="page-content hidden">
+          <h2 class="page-title" id="characters-title">
+            Loyaliteit en Verraad
+          </h2>
+
+          <div class="content-grid content-grid--characters">
+            <!-- arthur morgan -->
+            <div
+              class="card card--character character-card"
+              data-character="arthur"
+            >
+              <img
+                src="media/arthur.jpg"
+                alt="Arthur Morgan"
+                class="card__image--character"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x550/333333/C9A05B?text=Arthur+Morgan';"
+              />
+              <div class="card__body">
+                <h3 class="card__title--character" data-key="char-arthur-name">
+                  Arthur Morgan
+                </h3>
+                <p class="card__subtitle" data-key="char-arthur-role">
+                  De Loyale Handhaver
+                </p>
+                <p class="card__text--small" data-key="char-arthur-desc">
+                  De protagonist en de speler's blik op de veranderende wereld.
+                  Arthur is een pragmatische outlaw die worstelt met de idealen
+                  van zijn leider.
+                </p>
+                <span class="card__link-text" data-key="char-more-details"
+                  >MEER DETAILS (Tikken)</span
+                >
+              </div>
+            </div>
+
+            <!-- dutch van der linde -->
+            <div
+              class="card card--character character-card"
+              data-character="dutch"
+            >
+              <img
+                src="media/dutch.png"
+                alt="Dutch van der Linde"
+                class="card__image--character"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x550/333333/8B1A1A?text=Dutch+van+der+Linde';"
+              />
+              <div class="card__body">
+                <h3 class="card__title--character" data-key="char-dutch-name">
+                  Dutch van der Linde
+                </h3>
+                <p class="card__subtitle" data-key="char-dutch-role">
+                  De Charismatische Leider
+                </p>
+                <p class="card__text--small" data-key="char-dutch-desc">
+                  De leider van de bende, een man van visie en retoriek die
+                  droomt van een leven buiten de greep van de overheid.
+                </p>
+                <span class="card__link-text" data-key="char-more-details"
+                  >MEER DETAILS (Tikken)</span
+                >
+              </div>
+            </div>
+
+            <!-- john marston -->
+            <div
+              class="card card--character character-card"
+              data-character="john"
+            >
+              <img
+                src="media/john.jpg"
+                alt="John Marston"
+                class="card__image--character"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x550/333333/C9A05B?text=John+Marston';"
+              />
+              <div class="card__body">
+                <h3 class="card__title--character" data-key="char-john-name">
+                  John Marston
+                </h3>
+                <p class="card__subtitle" data-key="char-john-role">
+                  De Ex-Zwerver
+                </p>
+                <p class="card__text--small" data-key="char-john-desc">
+                  De hoofdpersoon van de eerste game en Arthurs protégé. Zijn
+                  relatie met de bende is gespannen.
+                </p>
+                <span class="card__link-text" data-key="char-more-details"
+                  >MEER DETAILS (Tikken)</span
+                >
+              </div>
+            </div>
+
+            <!-- over de gang -->
+            <div class="card card--family">
+              <div>
+                <h3 class="card__title" data-key="char-family-title">
+                  De Bende als Familie
+                </h3>
+                <p class="card__text" data-key="char-family-desc">
+                  De Van der Linde Gang bestaat uit meer dan 20 unieke
+                  karakters, elk met hun eigen verhaal, taak en relatie met
+                  Arthur. Hun kamp fungeert als een dynamisch thuisbasis dat
+                  evolueert op basis van de donaties van de speler en de
+                  voortgang van het verhaal.
+                </p>
+              </div>
+              <p class="card__quote" data-key="char-family-quote">
+                "Wij zijn spoken die proberen een vuur te stoken in een
+                koudgemaakte wereld." - Dutch
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- pagina 3 -->
+        <section id="page-details" class="page-content hidden">
+          <h2 class="page-title" id="details-title">Ongeëvenaard Realisme</h2>
+
+          <div class="content-grid content-grid--details">
+            <div class="card">
+              <h3 class="card__title" data-key="det-immersion-title">
+                Focus op Immersie
+              </h3>
+              <p class="card__text" data-key="det-immersion-p1">
+                Rockstar Games heeft RDR2 ontworpen met een obsessie voor
+                detail. Vrijwel elk systeem draagt bij aan de immersie en het
+                gevoel van leven in de wereld van 1899. Dit omvat:
+              </p>
+              <ul class="card__list">
+                <li data-key="det-immersion-li1">
+                  <strong>Gedetailleerde Animatie:</strong> Arthur pakt elk
+                  object, bergt wapens individueel op, en deelt gesprekken
+                  terwijl hij te paard rijdt.
+                </li>
+                <li data-key="det-immersion-li2">
+                  <strong>Haar- en Baardgroei:</strong> Arthurs haar groeit in
+                  realtime en kan alleen worden geknipt/geschoren.
+                </li>
+                <li data-key="det-immersion-li3">
+                  <strong>Het Paard:</strong> Jouw paard is niet alleen
+                  transport, maar een levend wezen dat verzorging en voeding
+                  nodig heeft.
+                </li>
+                <li data-key="det-immersion-li4">
+                  <strong>Klimaatbeïnvloeding:</strong> Kledingkeuzes
+                  beïnvloeden je statistieken bij koud of warm weer.
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title" data-key="det-honor-title">
+                Het Eer (Honor) Systeem
+              </h3>
+              <p class="card__text" data-key="det-honor-p1">
+                Een cruciaal mechanisme is het 'Honor'-systeem, dat Arthurs
+                reputatie weerspiegelt. Goede daden (mensen helpen, groeten)
+                verhogen je eer; slechte daden (diefstal, willekeurige moorden)
+                verlagen deze.
+              </p>
+              <p class="card__text" data-key="det-honor-p2">
+                De eer-stand heeft directe gevolgen voor het spel: de prijzen
+                bij winkeliers, de reacties van NPC's, de muziek die speelt, en,
+                cruciaal, de cinematische scènes en het einde van het verhaal.
+                Het dwingt de speler na te denken over zijn morele keuzes in de
+                chaos van de bende.
+              </p>
+            </div>
+
+            <div class="card card--fact grid-span-2">
+              <svg
+                class="card__fact-icon--small"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <div>
+                <h4 class="card__fact-title" data-key="det-trivia-title">
+                  Productie Weetje
+                </h4>
+                <p class="card__fact-text" data-key="det-trivia-content">
+                  Het spel bevat meer dan 500.000 regels dialoog. NPC's
+                  (niet-speelbare personages) reageren dynamisch op jouw
+                  handelingen en uiterlijk: als je bloed op je kleding hebt, kan
+                  dit paniek veroorzaken in de stad!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <p id="footer-text">
+          &copy; 2025 Museum De Pixel - Red Dead Redemption 2 | Max Paardekam
+        </p>
+      </footer>
+    </div>
+
+    <!-- karakter pop-up -->
+    <div
+      id="character-modal"
+      class="modal-overlay hidden"
+      onclick="hideModal()"
+    >
+      <div
+        class="modal-content modal-content--character"
+        onclick="event.stopPropagation()"
+      >
+        <button class="modal__close-button" onclick="hideModal()">
+          &times;
+        </button>
+        <div class="modal-grid">
+          <div class="modal__image-container">
+            <img
+              id="modal-image"
+              src=""
+              alt="Karakter afbeelding"
+              class="modal__image"
+            />
+            <p id="modal-role" class="modal__role"></p>
+          </div>
+          <div class="modal__text-container">
+            <h2 id="modal-name" class="modal__title"></h2>
+            <p id="modal-summary" class="modal__summary"></p>
+            <p id="modal-details" class="modal__details"></p>
+            <div id="modal-quote" class="modal__quote"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- galerij pop-up -->
+    <div
+      id="gallery-modal"
+      class="modal-overlay hidden"
+      onclick="hideGallery()"
+    >
+      <div
+        class="modal-content gallery-content"
+        onclick="event.stopPropagation()"
+      >
+        <button class="modal__close-button" onclick="hideGallery()">
+          &times;
+        </button>
+        <h2 id="gallery-title" class="gallery__title">Landschaps Galerij</h2>
+
+        <div class="gallery__image-wrapper">
+          <img
+            id="current-gallery-image"
+            src=""
+            alt="RDR2 Landschap"
+            class="gallery-image-fade"
+          />
+          <button
+            class="gallery__nav-button gallery__nav-button--prev"
+            onclick="changeGalleryImage(-1)"
+          >
+            &#10094;
+          </button>
+          <button
+            class="gallery__nav-button gallery__nav-button--next"
+            onclick="changeGalleryImage(1)"
+          >
+            &#10095;
+          </button>
+        </div>
+
+        <p id="gallery-caption" class="gallery__caption">Afbeelding 1 van 4.</p>
+      </div>
+    </div>
+  </body>
+</html>

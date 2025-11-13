@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./csgo/styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="./index.html" class="active">Home</a>
+        <a href="./about.html">Over ons</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-split">
+        <div class="hero-left">
+          <div class="hero-overlay">
+            <h1>CS:GO — Tactisch & Competitief</h1>
+            <p class="lead">
+              Van LAN-rooms naar Majors. Snelle rondes, strakke gunplay en een
+              bloeiende esports-scene.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="./csgo/page1.html">Ontdek CS:GO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-overlay">
+            <h1>Red Dead Redemption 2 — Cinematisch & Groot</h1>
+            <p class="lead">
+              Rijd door het wilde westen. Diepe verhaallijnen, een levende
+              wereld en prachtige visuele presentatie.
+            </p>
+            <div class="hero-actions">
+              <a
+                class="btn"
+                style="
+                  background: var(--rdr-saddle);
+                  color: var(--rdr-parchment);
+                "
+                href="./rdr2/index.html"
+                >Ontdek RDR2</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container two-columns">
+        <section id="cs-section" class="content-card split">
+          <div
+            class="card-media"
+            style="
+              background-image: url('./csgo/images/counter_strike_2_graphic-1024x576.jpg');
+            "
+          ></div>
+          <div class="card-body">
+            <h2>Counter-Strike</h2>
+            <p class="muted">
+              Counter-Strike is ontstaan als Half‑Life mod in 1999 en evolueerde
+              via 1.6, Source en CS:GO naar een van de grootste esports.
+            </p>
+            <ul class="meta">
+              <li>2012 — CS:GO release</li>
+              <li>Esports: Majors, professional scene</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn" href="./csgo/page1.html">Lees meer</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container two-columns">
+        <section id="rdr2-section" class="content-card split">
+          <div
+            class="card-media"
+            style="background-image: url('./csgo/images/rdr2.jpg')"
+          ></div>
+          <div class="card-body">
+            <h2>Red Dead Redemption 2</h2>
+            <p class="muted">
+              Een episch, singleplayer‑georiënteerd open‑world spel met
+              cinematografische storytelling en rijke NPC-interacties.
+            </p>
+            <ul class="meta">
+              <li>2018 — Release van RDR2</li>
+              <li>Focus: verhaal, wereldsimulatie</li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn" href="./rdr2/index.html">Lees meer</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true">
+        <button id="modal-close" class="modal-close" aria-label="Close">
+          ×
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <p>
+        &copy; 2025 Museum De Pixel - RDR2 & CS:GO | Max Paardekam & Floris Ebus
+      </p>
+    </footer>
+    <script src="./csgo/scripts/script.js"></script>
+  </body>
+</html>
