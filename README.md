@@ -1,4 +1,3 @@
-```markdown
 # Museum De Pixel - Een Vergelijking tussen RDR2 & CS:GO
 
 Dit is een websiteproject, 'Museum De Pixel', gemaakt door twee studenten van het Grafisch Lyceum Rotterdam. De site dient als een digitaal museum dat twee iconische games vergelijkt en naast elkaar plaatst: het cinematische **Red Dead Redemption 2** en het competitieve **Counter-Strike: Global Offensive**.
