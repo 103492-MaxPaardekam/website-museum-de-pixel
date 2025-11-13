@@ -2,6 +2,8 @@
 
 Dit is een websiteproject, 'Museum De Pixel', gemaakt door twee studenten van het Grafisch Lyceum Rotterdam. De site dient als een digitaal museum dat twee iconische games vergelijkt en naast elkaar plaatst: het cinematische **Red Dead Redemption 2** en het competitieve **Counter-Strike: Global Offensive**.
 
+https://104316.stu.sd-lab.nl/Museum%20De%20Pixel/index.html
+
 ## Auteurs
 
 Dit project is ontworpen en gebouwd door:
